@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <base href="../">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#0b0b1a">
+  <title>Red0ut · Sky Wrapped 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=202611071227">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main id="app">
+    <section id="picker" class="screen">
+      <div class="picker-inner">
+        <p class="eyebrow">Syride · 2026</p>
+        <h1 class="picker-title">Sky<br>Wrapped</h1>
+        <p class="picker-sub">Une année de vol, rembobinée.<br>Qui vole ?</p>
+        <div id="pilot-list" class="pilot-list"></div>
+      </div>
+      <div class="picker-sky" aria-hidden="true"></div>
+    </section>
+
+    <section id="story" class="screen hidden" aria-live="polite">
+      <div class="progress" id="progress"></div>
+      <button class="close" id="close" aria-label="Fermer">✕</button>
+      <div class="slides" id="slides"></div>
+      <div class="tap tap-prev" id="tap-prev"></div>
+      <div class="tap tap-next" id="tap-next"></div>
+    </section>
+  </main>
+  <script>window.PILOT = "Red0ut"; window.SLUG = "nico";</script>
+  <script type="module" src="app.js?v=202611071227"></script>
+</body>
+</html>
